@@ -27,7 +27,7 @@ const AnimatedSlogan = () => {
       {lines.map((line, index) => (
         <h1
           key={index}
-          className={`text-3xl md:text-5xl lg:text-6xl font-bold transition-all duration-700 ease-out ${
+          className={`font-cal-sans text-3xl md:text-5xl lg:text-6xl font-bold transition-all duration-700 ease-out ${
             visibleLines.includes(index)
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-8"

@@ -1,4 +1,5 @@
 import { Apple, Play } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,28 +11,25 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">1</span>
-              </div>
-              <span className="font-bold text-xl text-foreground">One</span>
+              <span className="font-bold text-2xl text-foreground">One</span>
             </div>
-            <p className="text-muted-foreground text-sm">
+            <p className="text-muted-foreground text-base">
               One habit. One goal. One step at a time.
             </p>
           </div>
           
           {/* Download */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Download</h4>
+            <h4 className="font-semibold text-lg text-foreground mb-4">Download</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 text-sm">
-                  <Apple className="w-4 h-4" /> App Store
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 text-base">
+                  <Apple className="w-5 h-5" /> App Store
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 text-sm">
-                  <Play className="w-4 h-4" fill="currentColor" /> Google Play
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 text-base">
+                  <Play className="w-5 h-5" fill="currentColor" /> Google Play
                 </a>
               </li>
             </ul>
@@ -39,46 +37,46 @@ const Footer = () => {
           
           {/* Resources */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Resources</h4>
+            <h4 className="font-semibold text-lg text-foreground mb-4">Resources</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                <Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors text-base">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                <Link to="/changelog" className="text-muted-foreground hover:text-primary transition-colors text-base">
                   Change Log
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors text-base">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
           
           {/* Legal */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Legal</h4>
+            <h4 className="font-semibold text-lg text-foreground mb-4">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors text-base">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                <Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors text-base">
                   Terms of Service
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-border/50 pt-8 text-center">
-          <p className="text-muted-foreground text-sm">
+          <p className="text-muted-foreground text-base">
             © {currentYear} One Habit Tracker. All rights reserved.
           </p>
         </div>

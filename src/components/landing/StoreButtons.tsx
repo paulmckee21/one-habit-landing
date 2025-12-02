@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const StoreButtons = () => {
   return (
-    <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
       <Button
         size="lg"
         className="bg-foreground text-background hover:bg-foreground/90 gap-3 px-6 py-6 h-auto"
