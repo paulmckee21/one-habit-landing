@@ -90,6 +90,7 @@ export default {
   			sans: ['Lato', 'ui-sans-serif', 'system-ui', 'sans-serif'],
   			serif: ['EB Garamond', 'ui-serif', 'Georgia', 'serif'],
   			mono: ['Fira Code', 'ui-monospace', 'monospace'],
+  			heading: ['Cal Sans', 'Lato', 'ui-sans-serif', 'system-ui', 'sans-serif'],
   			'cal-sans': ['Cal Sans', 'Lato', 'ui-sans-serif', 'system-ui', 'sans-serif']
   		}
   	}

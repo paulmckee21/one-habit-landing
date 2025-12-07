@@ -4,8 +4,8 @@
 
 @font-face {
   font-family: 'Cal Sans';
-  src: url('https://cdn.jsdelivr.net/gh/calcom/font/CalSans-SemiBold.woff2') format('woff2');
-  font-weight: 600;
+  src: url('/fonts/CalSans-Regular.ttf') format('truetype');
+  font-weight: 400 600 700;
   font-style: normal;
   font-display: swap;
 }
@@ -157,7 +157,8 @@ All colors MUST be HSL.
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading) !important;
+    font-family: 'Cal Sans', 'Lato', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-weight: 600 !important;
   }
 }
 

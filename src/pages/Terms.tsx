@@ -16,7 +16,7 @@ const Terms = () => {
 
           <div className="space-y-8 text-foreground/90">
             <section>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">1. Acceptance of Terms</h2>
+              <h2 className="font-cal-sans text-2xl font-semibold text-foreground mb-4">1. Acceptance of Terms</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Welcome to One. These Terms of Service ("Terms") govern your access to and use of the One mobile application ("App," "Service," "we," "us," or "our"). By downloading, installing, or using One, you agree to be bound by these Terms.
               </p>
