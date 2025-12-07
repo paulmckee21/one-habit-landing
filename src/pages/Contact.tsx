@@ -15,36 +15,20 @@ const Contact = () => {
             We'd love to hear from you. Get in touch with our team.
           </p>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="max-w-2xl mx-auto">
             <div className="bg-card p-8 rounded-2xl border border-border/50">
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
                 <Mail className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">Email Support</h3>
               <p className="text-muted-foreground mb-4">
-                For general inquiries and support questions.
+                For general inquiries, support questions, and feedback.
               </p>
               <a 
-                href="mailto:support@onehabit.app" 
-                className="text-primary hover:underline"
+                href="mailto:one.habit.tracker.app@gmail.com" 
+                className="text-primary hover:underline break-all"
               >
-                support@onehabit.app
-              </a>
-            </div>
-
-            <div className="bg-card p-8 rounded-2xl border border-border/50">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                <MessageSquare className="w-7 h-7 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Feedback</h3>
-              <p className="text-muted-foreground mb-4">
-                Share your ideas and help us improve One.
-              </p>
-              <a 
-                href="mailto:feedback@onehabit.app" 
-                className="text-primary hover:underline"
-              >
-                feedback@onehabit.app
+                one.habit.tracker.app@gmail.com
               </a>
             </div>
           </div>

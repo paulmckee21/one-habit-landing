@@ -268,7 +268,7 @@ const Terms = () => {
               
               <h3 className="text-xl font-semibold text-foreground mb-3 mt-4">13.1 Informal Resolution</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Before filing a claim, you agree to contact us at legal@onehabit.app to attempt to resolve the dispute informally for at least 30 days.
+                Before filing a claim, you agree to contact us at one.habit.tracker.app@gmail.com to attempt to resolve the dispute informally for at least 30 days.
               </p>
 
               <h3 className="text-xl font-semibold text-foreground mb-3 mt-4">13.2 Arbitration</h3>
@@ -325,10 +325,7 @@ const Terms = () => {
               </p>
               <div className="bg-card p-6 rounded-lg border border-border/50">
                 <p className="text-muted-foreground mb-2">
-                  <strong className="text-foreground">Legal Inquiries:</strong> legal@onehabit.app
-                </p>
-                <p className="text-muted-foreground mb-2">
-                  <strong className="text-foreground">General Support:</strong> support@onehabit.app
+                  <strong className="text-foreground">Email:</strong> one.habit.tracker.app@gmail.com
                 </p>
                 <p className="text-muted-foreground">
                   <strong className="text-foreground">Response Time:</strong> We aim to respond within 48 hours

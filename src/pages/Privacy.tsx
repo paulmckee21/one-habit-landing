@@ -41,7 +41,9 @@ const Privacy = () => {
               <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-4">
                 <li><strong>Device Information:</strong> Device type, operating system version, unique device identifiers</li>
                 <li><strong>Usage Data:</strong> App features used, time spent in app, interaction patterns</li>
-                <li><strong>Analytics Data:</strong> Crash reports, performance data, and general usage statistics</li>
+                <li><strong>Analytics Data:</strong> Collected via Google Analytics for Firebase, including screen views, user engagement, and feature usage</li>
+                <li><strong>Crash Reports:</strong> Collected via Firebase Crashlytics, including stack traces, device state, and crash logs to help us identify and fix bugs</li>
+                <li><strong>Performance Data:</strong> App performance metrics, load times, and network requests</li>
                 <li><strong>Local Storage:</strong> Data stored locally on your device using Hive database</li>
               </ul>
 
@@ -109,13 +111,14 @@ const Privacy = () => {
                 We may share your information with trusted third-party service providers who assist us in operating our app:
               </p>
               <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-4">
-                <li>Cloud hosting providers (for premium cloud backup)</li>
-                <li>Analytics services (anonymized data only)</li>
-                <li>Payment processors (Apple, Google)</li>
-                <li>Customer support tools</li>
+                <li><strong>Google Analytics for Firebase:</strong> For usage analytics and user behavior insights (anonymized data)</li>
+                <li><strong>Firebase Crashlytics:</strong> For crash reporting and app stability monitoring</li>
+                <li><strong>Firebase Cloud Services:</strong> For cloud hosting and premium cloud backup</li>
+                <li><strong>Payment Processors:</strong> Apple App Store and Google Play Store for subscription management</li>
+                <li><strong>Customer Support Tools:</strong> For responding to support inquiries</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed">
-                These service providers are contractually obligated to protect your information and use it only for the purposes we specify.
+                These service providers are contractually obligated to protect your information and use it only for the purposes we specify. For more information about how Google processes data, visit <a href="https://policies.google.com/privacy" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.
               </p>
 
               <h3 className="text-xl font-semibold text-foreground mb-3 mt-4">5.3 Legal Requirements</h3>
@@ -134,12 +137,13 @@ const Privacy = () => {
                 <li><strong>Correction:</strong> Update or correct inaccurate information</li>
                 <li><strong>Deletion:</strong> Request deletion of your account and all associated data</li>
                 <li><strong>Export:</strong> Download your data in CSV or JSON format (premium feature)</li>
-                <li><strong>Opt-Out:</strong> Disable analytics tracking in app settings</li>
+                <li><strong>Opt-Out Analytics:</strong> Disable Google Analytics tracking in app settings</li>
+                <li><strong>Opt-Out Crashlytics:</strong> Disable Firebase Crashlytics in app settings (note: this may limit our ability to fix bugs affecting you)</li>
                 <li><strong>Notification Control:</strong> Manage notification preferences</li>
                 <li><strong>Portability:</strong> Transfer your data to another service</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                To exercise these rights, contact us at privacy@onehabit.app or use the in-app settings.
+                To exercise these rights, contact us at one.habit.tracker.app@gmail.com or use the in-app settings.
               </p>
             </section>
 
@@ -159,7 +163,7 @@ const Privacy = () => {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">8. Children's Privacy</h2>
               <p className="text-muted-foreground leading-relaxed">
-                One is not intended for children under the age of 13 (or 16 in the European Economic Area). We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately at privacy@onehabit.app, and we will delete such information.
+                One is not intended for children under the age of 13 (or 16 in the European Economic Area). We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately at one.habit.tracker.app@gmail.com, and we will delete such information.
               </p>
             </section>
 
@@ -214,10 +218,7 @@ const Privacy = () => {
               </p>
               <div className="bg-card p-6 rounded-lg border border-border/50">
                 <p className="text-muted-foreground mb-2">
-                  <strong className="text-foreground">Email:</strong> privacy@onehabit.app
-                </p>
-                <p className="text-muted-foreground mb-2">
-                  <strong className="text-foreground">Support:</strong> support@onehabit.app
+                  <strong className="text-foreground">Email:</strong> one.habit.tracker.app@gmail.com
                 </p>
                 <p className="text-muted-foreground">
                   <strong className="text-foreground">Response Time:</strong> We aim to respond within 48 hours
