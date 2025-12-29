@@ -1,6 +1,14 @@
-import PhoneMockup from "./PhoneMockup";
-
 const ScreenshotsSection = () => {
+  const screenshots = [
+    "/screenshots/01.png",
+    "/screenshots/02.png",
+    "/screenshots/03.png",
+    "/screenshots/04.png",
+    "/screenshots/05.png",
+    "/screenshots/06.png",
+    "/screenshots/07.png",
+  ];
+
   return (
     <section id="screenshots" className="py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -13,35 +21,19 @@ const ScreenshotsSection = () => {
           </p>
         </div>
         
-        <div className="flex justify-center items-center gap-6 md:gap-12 flex-wrap">
-          <div className="transform hover:scale-105 transition-transform duration-300">
-            <PhoneMockup variant="main" />
-          </div>
-          <div className="transform hover:scale-105 transition-transform duration-300">
-            <PhoneMockup variant="secondary" className="opacity-100" />
-          </div>
-          <div className="hidden lg:block transform hover:scale-105 transition-transform duration-300">
-            <PhoneMockup variant="main" />
-          </div>
-        </div>
-        
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center max-w-3xl mx-auto">
-          <div>
-            <div className="text-4xl font-bold text-primary">50K+</div>
-            <div className="text-muted-foreground mt-1">Downloads</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-primary">4.9</div>
-            <div className="text-muted-foreground mt-1">App Rating</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-primary">1M+</div>
-            <div className="text-muted-foreground mt-1">Habits Tracked</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-primary">89%</div>
-            <div className="text-muted-foreground mt-1">Success Rate</div>
-          </div>
+        <div className="flex justify-center items-center gap-4 md:gap-6 flex-wrap">
+          {screenshots.map((screenshot, index) => (
+            <div
+              key={index}
+              className="transform hover:scale-105 transition-transform duration-300 rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-border/50"
+            >
+              <img
+                src={screenshot}
+                alt={`One app screenshot ${index + 1}`}
+                className="w-[200px] md:w-[260px] h-auto"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

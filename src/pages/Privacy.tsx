@@ -75,15 +75,10 @@ const Privacy = () => {
               
               <h3 className="text-xl font-semibold text-foreground mb-3 mt-4">4.1 Local Storage</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                By default, all your habit data is stored locally on your device using encrypted Hive database. This data never leaves your device unless you explicitly enable cloud backup (premium feature).
+                All your habit data is stored locally on your device using encrypted Hive database. This data never leaves your device.
               </p>
 
-              <h3 className="text-xl font-semibold text-foreground mb-3 mt-4">4.2 Cloud Storage (Premium)</h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Premium users who enable cloud backup will have their data securely stored on our servers with industry-standard encryption (AES-256). Data is encrypted both in transit (TLS 1.3) and at rest.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3 mt-4">4.3 Security Measures</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-3 mt-4">4.2 Security Measures</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 We implement appropriate technical and organizational security measures to protect your information, including:
               </p>
@@ -113,7 +108,6 @@ const Privacy = () => {
               <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-4">
                 <li><strong>Google Analytics for Firebase:</strong> For usage analytics and user behavior insights (anonymized data)</li>
                 <li><strong>Firebase Crashlytics:</strong> For crash reporting and app stability monitoring</li>
-                <li><strong>Firebase Cloud Services:</strong> For cloud hosting and premium cloud backup</li>
                 <li><strong>Payment Processors:</strong> Apple App Store and Google Play Store for subscription management</li>
                 <li><strong>Customer Support Tools:</strong> For responding to support inquiries</li>
               </ul>
@@ -155,7 +149,6 @@ const Privacy = () => {
               <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                 <li><strong>Active Accounts:</strong> Data retained while your account is active</li>
                 <li><strong>Deleted Accounts:</strong> Data permanently deleted within 30 days of account deletion</li>
-                <li><strong>Backup Data:</strong> Backup copies deleted within 90 days</li>
                 <li><strong>Analytics Data:</strong> Anonymized analytics retained for up to 2 years</li>
               </ul>
             </section>

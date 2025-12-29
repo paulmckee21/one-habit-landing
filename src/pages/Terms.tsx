@@ -28,7 +28,7 @@ const Terms = () => {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">2. Eligibility</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                You must be at least 13 years old (or 16 in the European Economic Area) to use One. By using the App, you represent and warrant that:
+                You must be at least 4 years old to use One. By using the App, you represent and warrant that:
               </p>
               <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                 <li>You meet the minimum age requirement</li>
@@ -113,11 +113,6 @@ const Terms = () => {
               <h3 className="text-xl font-semibold text-foreground mb-3 mt-4">5.4 Refunds</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Refund requests are subject to Apple App Store and Google Play Store refund policies. We do not directly process refunds. Contact Apple or Google for refund requests.
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3 mt-4">5.5 Free Trial</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                If we offer a free trial, you will be charged the subscription fee after the trial period ends unless you cancel before the trial expires.
               </p>
             </section>
 

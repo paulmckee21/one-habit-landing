@@ -1,4 +1,4 @@
-import { Target, TrendingUp, Focus, Bell, BarChart3, BookOpen, Palette, History, Download, Smartphone, Award, Upload } from "lucide-react";
+import { Target, TrendingUp, Focus, Bell, BarChart3, BookOpen, Palette, History, Download, Award, Upload } from "lucide-react";
 
 const features = [
   {
@@ -59,12 +59,6 @@ const features = [
     icon: TrendingUp,
     title: "Habit Trends & Insights",
     description: "Discover patterns and optimize your routine with trend analysis",
-    isPremium: true
-  },
-  {
-    icon: Smartphone,
-    title: "Home Screen Widgets",
-    description: "Track your progress at a glance right from your home screen",
     isPremium: true
   },
   {
