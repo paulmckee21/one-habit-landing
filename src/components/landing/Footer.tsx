@@ -77,7 +77,7 @@ const Footer = () => {
         
         <div className="border-t border-border/50 pt-8 text-center">
           <p className="text-muted-foreground text-base">
-            © {currentYear} One Habit Tracker. All rights reserved.
+            Habit Tracker - One. Made with ❤️ and ☕ by Paul McKee
           </p>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import StoreButtons from "@/components/landing/StoreButtons";
@@ -37,6 +38,11 @@ const premiumFeatures = [
 ];
 
 const Premium = () => {
+  useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <main className="dark min-h-screen bg-background">
       <Header />
@@ -99,7 +105,7 @@ const Premium = () => {
         </div>
       </section>
 
-      {/* Screenshots Section - Placeholder for future screenshots */}
+      {/* Screenshots Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -107,15 +113,88 @@ const Premium = () => {
               See Premium <span className="text-primary">In Action</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Explore the premium experience through screenshots of the app.
+              Explore the premium experience through screenshots showcasing advanced statistics, themes, and features.
             </p>
           </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-card/50 border border-border/50 rounded-2xl p-12 text-center">
+
+          {/* Premium Themes Section */}
+          <div className="mb-20">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 mb-4">
+                <Palette className="w-6 h-6 text-primary" />
+                <h3 className="text-2xl md:text-3xl font-semibold text-foreground">
+                  Premium Themes
+                </h3>
+              </div>
               <p className="text-muted-foreground">
-                Premium screenshots coming soon...
+                Personalize your experience with beautiful themes
               </p>
+            </div>
+            <div className="flex justify-center items-center gap-4 md:gap-6 flex-wrap">
+              {[
+                { src: "/screenshots/premium-04.png", alt: "Main app screen with dark theme" },
+                { src: "/screenshots/premium-05.png", alt: "Main app screen with pastel theme" },
+                { src: "/screenshots/premium-03.png", alt: "Habit completion modal with statistics" },
+              ].map((screenshot, index) => (
+                <div
+                  key={index}
+                  className="transform hover:scale-105 transition-transform duration-300 rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-primary/20 hover:border-primary/50"
+                >
+                  <img
+                    src={screenshot.src}
+                    alt={screenshot.alt}
+                    className="w-[200px] md:w-[260px] h-auto"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Habit History Section */}
+          <div className="mb-20">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 mb-4">
+                <History className="w-6 h-6 text-primary" />
+                <h3 className="text-2xl md:text-3xl font-semibold text-foreground">
+                  Habit History
+                </h3>
+              </div>
+              <p className="text-muted-foreground">
+                View all your past habits and achievements
+              </p>
+            </div>
+            <div className="flex justify-center items-center gap-4 md:gap-6 flex-wrap">
+              <div className="transform hover:scale-105 transition-transform duration-300 rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-primary/20 hover:border-primary/50">
+                <img
+                  src="/screenshots/premium-06.png"
+                  alt="Main app screen with AMOLED black theme"
+                  className="w-[200px] md:w-[260px] h-auto"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Analytics Section */}
+          <div>
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 mb-4">
+                <BarChart3 className="w-6 h-6 text-primary" />
+                <h3 className="text-2xl md:text-3xl font-semibold text-foreground">
+                  Advanced Analytics
+                </h3>
+              </div>
+              <p className="text-muted-foreground">
+                Deep insights into your habit-building journey
+              </p>
+            </div>
+            <div className="flex justify-center items-center gap-4 md:gap-6 flex-wrap">
+              <div className="transform hover:scale-105 transition-transform duration-300 rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-primary/20 hover:border-primary/50">
+                <img
+                  src="/screenshots/premium-07.png"
+                  alt="Habit History screen showing past habits"
+                  className="w-[200px] md:w-[260px] h-auto"
+                />
+              </div>
             </div>
           </div>
         </div>
