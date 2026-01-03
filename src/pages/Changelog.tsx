@@ -23,7 +23,6 @@ const Changelog = () => {
             <div className="bg-card p-6 rounded-2xl border border-border/50">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl font-bold text-primary">v1.0.0</span>
-                <span className="text-sm text-muted-foreground">Coming Soon</span>
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">Initial Release</h3>
               <ul className="space-y-2 text-muted-foreground">
@@ -34,6 +33,18 @@ const Changelog = () => {
                 <li>• Micro-journaling</li>
                 <li>• Smart reminders</li>
                 <li>• Progress analytics</li>
+              </ul>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl font-bold text-primary">v1.0.1</span>
+              </div>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Bug fixes and improvements to premium service</li>
+              </ul>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl font-bold text-primary">v1.0.2</span>
+              </div>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Bug fixes and improvements to habit history</li>
               </ul>
             </div>
           </div>
